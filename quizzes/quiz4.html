@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Chapter 4 | Geology Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">⚡ Geology Master</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../lectures/lec4.html" class="nav-item">📖 Review Ch.4</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header class="lecture-header">
+            <div class="badge badge-purple">Quiz</div>
+            <h1>🎯 Chapter 4: Structural Geology</h1>
+            <p style="color: var(--text-muted);">15 Questions • MCQ + True/False</p>
+        </header>
+
+        <div id="quizContainer" class="quiz-container"></div>
+
+    </div>
+
+    <script src="../js/quiz.js"></script>
+    <script>
+        const questions = [
+            { type: 'mcq', text: "Which sedimentary structure is characterized by a progressive decrease in grain size upward?", options: ["Cross-bedding", "Ripple marks", "Graded bedding", "Mudcracks"], answer: 'c' },
+            { type: 'mcq', text: "In an Anticline fold, the ............ rocks are found in the core.", options: ["youngest", "oldest", "sedimentary", "metamorphic"], answer: 'b' },
+            { type: 'mcq', text: "Normal faults are created by ............ forces.", options: ["compressional", "tensional", "shear", "magnetic"], answer: 'b' },
+            { type: 'mcq', text: "A fault where the hanging wall moves DOWN relative to the footwall is called:", options: ["Reverse fault", "Thrust fault", "Normal fault", "Strike-slip fault"], answer: 'c' },
+            { type: 'mcq', text: "The San Andreas fault is an example of a ............ fault.", options: ["Normal", "Reverse", "Strike-slip", "Thrust"], answer: 'c' },
+            { type: 'mcq', text: "Fractures in rocks with NO displacement are called:", options: ["Faults", "Folds", "Joints", "Unconformities"], answer: 'c' },
+            { type: 'mcq', text: "Which type of deformation is temporary and reversible?", options: ["Plastic", "Brittle", "Elastic", "Ductile"], answer: 'c' },
+            { type: 'mcq', text: "A structural basin is similar to a syncline because the ............ rocks are in the center.", options: ["oldest", "youngest", "hardest", "softest"], answer: 'b' },
+            { type: 'tf', text: "In a Syncline, the layers warp downward.", answer: true },
+            { type: 'tf', text: "Reverse faults are caused by tensional stress.", answer: false, explanation: "Caused by Compressional stress." },
+            { type: 'tf', text: "Cross-bedding can indicate the direction of ancient wind or water flow.", answer: true },
+            { type: 'tf', text: "A Thrust fault is a type of reverse fault with a low dip angle.", answer: true },
+            { type: 'tf', text: "Horst and Graben structures are associated with normal faults.", answer: true },
+            { type: 'tf', text: "Plastic deformation results in the rock breaking.", answer: false, explanation: "Plastic results in folding. Fracture results in breaking." },
+            { type: 'tf', text: "Strike-slip faults involve mainly horizontal movement.", answer: true }
+        ];
+        quiz = new GeologyQuiz('quizContainer', questions);
+    </script>
+
+    <footer>
+        <p>🌍 Geology Master</p>
+    </footer>
+
+</body>
+
+</html>

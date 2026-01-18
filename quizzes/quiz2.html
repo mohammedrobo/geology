@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Chapter 2 | Geology Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">⚡ Geology Master</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../lectures/lec2.html" class="nav-item">📖 Review Ch.2</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header class="lecture-header">
+            <div class="badge badge-purple">Quiz</div>
+            <h1>🎯 Chapter 2: Solar System & Earth</h1>
+            <p style="color: var(--text-muted);">20 Questions • MCQ + True/False</p>
+        </header>
+
+        <div id="quizContainer" class="quiz-container"></div>
+
+    </div>
+
+    <script src="../js/quiz.js"></script>
+    <script>
+        const questions = [
+            { type: 'mcq', text: "The Earth's magnetic field is produced by the interaction of ............", options: ["lithosphere and hydrosphere", "crust and mantle", "inner and outer core", "lower mantle"], answer: 'c', source: 'Jan 2025' },
+            { type: 'mcq', text: "Which one of the Jovian planets is gaseous and has low density?", options: ["Saturn", "Venus", "Mars", "Mercury"], answer: 'a', source: 'Jan 2025' },
+            { type: 'mcq', text: "The Earth's layer with the highest volume is the ............", options: ["hydrosphere", "lithosphere", "asthenosphere", "mantle"], answer: 'd', source: 'Jan 2025' },
+            { type: 'mcq', text: "An example of large, low-density, and gaseous planets is ............", options: ["Venus", "Mercury", "Earth", "Uranus"], answer: 'd', source: 'Jan 2023' },
+            { type: 'mcq', text: "What is the currently accepted age of the Earth?", options: ["46,000 years", "460,000 years", "4.6 million years", "4.6 billion years"], answer: 'd', source: 'Jan 2020' },
+            { type: 'mcq', text: "What part of the Earth's internal structure is best described as molten iron and nickel?", options: ["Oceanic crust", "Lower Mantle", "Outer Core", "Inner Core"], answer: 'c', source: 'Jan 2020' },
+            { type: 'mcq', text: "The layer of the atmosphere that contains the ozone layer is ............", options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"], answer: 'b' },
+            { type: 'mcq', text: "The oldest rocks on Earth (3.96 billion years) are found in ............", options: ["The Himalayas", "The Red Sea", "Canadian Shield", "The Nile Delta"], answer: 'c' },
+            { type: 'mcq', text: "The theory that explains the origin of the Earth from a gas cloud is called ............", options: ["Big Bang Theory", "Plate Tectonics", "Nebular Theory", "Continental Drift"], answer: 'c' },
+            { type: 'mcq', text: "The lithosphere is composed of ............", options: ["Crust only", "Crust + Upper Mantle", "Mantle + Core", "Inner + Outer Core"], answer: 'b' },
+            { type: 'mcq', text: "Which layer behaves in a \"plastic\" manner and allows plates to flow?", options: ["Lithosphere", "Asthenosphere", "Inner Core", "Lower Mantle"], answer: 'b' },
+            { type: 'mcq', text: "The inner core remains solid despite high temperatures due to ............", options: ["Low density", "Extreme pressure", "Chemical weathering", "Lack of iron"], answer: 'b' },
+            { type: 'tf', text: "The Moho discontinuity is a boundary separating crust and mantle.", answer: true, source: 'Jan 2025 & 2023' },
+            { type: 'tf', text: "The continental crust is thicker, less dense, and older than the oceanic crust.", answer: true, source: 'Jan 2025' },
+            { type: 'tf', text: "Terrestrial planets have small, high density, rocky, poor in ice and H/He.", answer: true, source: 'Jan 2023' },
+            { type: 'tf', text: "Oceanic Crust is thicker, less dense, and older than Continental Crust.", answer: false, explanation: "Oceanic is thinner, denser, and younger.", source: 'Jan 2020' },
+            { type: 'tf', text: "The secondary seismic waves reach the velocity of zero at Gutenberg discontinuity.", answer: true, source: 'Jan 2025' },
+            { type: 'tf', text: "The Hydrosphere covers about 71% of Earth's surface.", answer: true },
+            { type: 'tf', text: "Continental crust is composed mainly of Basalt, while Oceanic crust is composed of Granite.", answer: false, explanation: "Continental = Granite, Oceanic = Basalt." }
+        ];
+        quiz = new GeologyQuiz('quizContainer', questions);
+    </script>
+
+    <footer>
+        <p>🌍 Geology Master</p>
+    </footer>
+
+</body>
+
+</html>

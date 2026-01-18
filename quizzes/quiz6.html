@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Chapter 6 | Geology Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">⚡ Geology Master</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../lectures/lec6.html" class="nav-item">📖 Review Ch.6</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header class="lecture-header">
+            <div class="badge badge-blue">Quiz</div>
+            <h1>🎯 Chapter 6: Rocks</h1>
+            <p style="color: var(--text-muted);">15 Questions • MCQ + True/False</p>
+        </header>
+
+        <div id="quizContainer" class="quiz-container"></div>
+
+    </div>
+
+    <script src="../js/quiz.js"></script>
+    <script>
+        const questions = [
+            { type: 'mcq', text: "Igneous rocks that form from magma cooling slowly beneath the Earth's surface are called:", options: ["Extrusive", "Volcanic", "Intrusive", "Sedimentary"], answer: 'c' },
+            { type: 'mcq', text: "Which texture indicates two stages of cooling (slow then fast)?", options: ["Glassy", "Coarse-grained", "Porphyritic", "Fine-grained"], answer: 'c' },
+            { type: 'mcq', text: "The extrusive equivalent of Granite is:", options: ["Basalt", "Gabbro", "Rhyolite", "Andesite"], answer: 'c' },
+            { type: 'mcq', text: "Obsidian is an igneous rock with a ............ texture.", options: ["Glassy", "Coarse", "Porphyritic", "Clastic"], answer: 'a' },
+            { type: 'mcq', text: "Which of the following is a Clastic sedimentary rock?", options: ["Rock Salt", "Limestone", "Sandstone", "Coal"], answer: 'c' },
+            { type: 'mcq', text: "Coal is classified as a(n) ............ sedimentary rock.", options: ["Chemical", "Organic", "Clastic", "Intrusive"], answer: 'b' },
+            { type: 'mcq', text: "Basalt and Gabbro have the same chemical composition, but Gabbro is:", options: ["Fine-grained", "Coarse-grained", "Glassy", "Sedimentary"], answer: 'b' },
+            { type: 'mcq', text: "The process of turning loose sediments into solid rock is called:", options: ["Weathering", "Melting", "Lithification", "Metamorphism"], answer: 'c' },
+            { type: 'tf', text: "Extrusive igneous rocks usually have a fine-grained texture.", answer: true },
+            { type: 'tf', text: "Limestone is a chemical sedimentary rock formed from Calcite.", answer: true },
+            { type: 'tf', text: "Peridotite is an ultramafic rock found in the Earth's mantle.", answer: true },
+            { type: 'tf', text: "Conglomerate is a clastic rock with fine-grained particles.", answer: false, explanation: "Conglomerate is Coarse-grained." },
+            { type: 'tf', text: "Magma is molten rock found on the Earth's surface.", answer: false, explanation: "Magma is underground; Lava is on the surface." },
+            { type: 'tf', text: "Rock Salt (Halite) is formed by precipitation from water.", answer: true },
+            { type: 'tf', text: "Granite is a coarse-grained intrusive rock.", answer: true }
+        ];
+        quiz = new GeologyQuiz('quizContainer', questions);
+    </script>
+
+    <footer>
+        <p>🌍 Geology Master</p>
+    </footer>
+
+</body>
+
+</html>

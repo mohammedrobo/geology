@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Chapter 3 | Geology Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">⚡ Geology Master</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../lectures/lec3.html" class="nav-item">📖 Review Ch.3</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header class="lecture-header">
+            <div class="badge badge-purple">Quiz</div>
+            <h1>🎯 Chapter 3: Plate Tectonics</h1>
+            <p style="color: var(--text-muted);">15 Questions • MCQ + True/False</p>
+        </header>
+
+        <div id="quizContainer" class="quiz-container"></div>
+
+    </div>
+
+    <script src="../js/quiz.js"></script>
+    <script>
+        const questions = [
+            { type: 'mcq', text: "Oceanic trench and volcanic island arc are marked ............ plate boundaries.", options: ["convergent", "divergent", "transform", "constructive"], answer: 'a', source: 'Jan 2025' },
+            { type: 'mcq', text: "Subduction zones form at the ............ plate boundaries.", options: ["divergent", "convergent", "transform", "tensional"], answer: 'b', source: 'Jan 2025' },
+            { type: 'mcq', text: "The San Andreas Fault in California is actually a Plate Boundary where one plate slides past another. We refer to this type as:", options: ["divergent", "convergent", "transform", "all of the above"], answer: 'c', source: 'Jan 2020' },
+            { type: 'mcq', text: "The Himalaya Mountain chain was formed by the collision of ............", options: ["Ocean-Ocean plates", "Ocean-Continent plates", "Continent-Continent plates", "Transform fault"], answer: 'c' },
+            { type: 'mcq', text: "Which theory states that all continents were once a single landmass called Pangea?", options: ["Seafloor Spreading", "Plate Tectonics", "Continental Drift", "Big Bang"], answer: 'c' },
+            { type: 'mcq', text: "The Red Sea and Sinai area is an example of ............ plate boundary.", options: ["Divergent", "Convergent", "Transform", "Subduction"], answer: 'a' },
+            { type: 'mcq', text: "Hawaiian Islands are a good example of ............", options: ["Island Arcs", "Hot Spots", "Mid-ocean ridges", "Trenches"], answer: 'b' },
+            { type: 'mcq', text: "One theory for the driving force for Plate Tectonics is ............", options: ["heat convection in the Mantle", "heat convection in the Atmosphere", "lunar tidal forces", "continental glaciers"], answer: 'a', source: 'Jan 2020' },
+            { type: 'tf', text: "Wegener could not explain the driving force behind continental drift.", answer: true },
+            { type: 'tf', text: "In a Transform boundary, plates move away from each other.", answer: false, explanation: "They slide past each other." },
+            { type: 'tf', text: "The Pacific Ring of Fire is a belt of active earthquakes and volcanoes.", answer: true },
+            { type: 'tf', text: "Glossopteris is a fossil plant used as evidence for Continental Drift.", answer: true },
+            { type: 'tf', text: "New basaltic crust is created at the divergent mid-ocean ridge.", answer: true, source: 'Jan 2025' },
+            { type: 'tf', text: "Deep ocean trenches are typically found at divergent boundaries.", answer: false, explanation: "Found at Convergent boundaries (Subduction)." },
+            { type: 'tf', text: "Mantle plumes and hot spots can be used to determine the rate of plate movement.", answer: true }
+        ];
+        quiz = new GeologyQuiz('quizContainer', questions);
+    </script>
+
+    <footer>
+        <p>🌍 Geology Master</p>
+    </footer>
+
+</body>
+
+</html>

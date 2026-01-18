@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Chapter 5 | Geology Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">⚡ Geology Master</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../lectures/lec5.html" class="nav-item">📖 Review Ch.5</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header class="lecture-header">
+            <div class="badge badge-blue">Quiz</div>
+            <h1>🎯 Chapter 5: Minerals</h1>
+            <p style="color: var(--text-muted);">15 Questions • MCQ + True/False</p>
+        </header>
+
+        <div id="quizContainer" class="quiz-container"></div>
+
+    </div>
+
+    <script src="../js/quiz.js"></script>
+    <script>
+        const questions = [
+            { type: 'mcq', text: "Which bond involves the sharing of electrons between atoms?", options: ["Ionic", "Covalent", "Metallic", "Van der Waals"], answer: 'b' },
+            { type: 'mcq', text: "The color of the powder produced by rubbing a mineral on a porcelain plate is called:", options: ["Luster", "Cleavage", "Streak", "Fracture"], answer: 'c' },
+            { type: 'mcq', text: "Which mineral has a hardness of 7 on Mohs scale?", options: ["Calcite", "Diamond", "Quartz", "Gypsum"], answer: 'c' },
+            { type: 'mcq', text: "The tendency of a mineral to break along planes of weak bonding is:", options: ["Fracture", "Cleavage", "Hardness", "Tenacity"], answer: 'b' },
+            { type: 'mcq', text: "Which mineral reacts (fizzes) with HCl immediately?", options: ["Quartz", "Calcite", "Dolomite", "Gypsum"], answer: 'b' },
+            { type: 'mcq', text: "Halite (NaCl) belongs to which mineral group?", options: ["Silicates", "Carbonates", "Halides", "Oxides"], answer: 'c' },
+            { type: 'mcq', text: "Which property describes the way light reflects off a mineral's surface?", options: ["Transparency", "Color", "Luster", "Streak"], answer: 'c' },
+            { type: 'mcq', text: "A mineral that feels \"soapy\" is:", options: ["Quartz", "Talc", "Graphite", "Pyrite"], answer: 'b' },
+            { type: 'tf', text: "A mineral must be organic and liquid.", answer: false, explanation: "Inorganic and Solid." },
+            { type: 'tf', text: "Diamond is the hardest known natural mineral.", answer: true },
+            { type: 'tf', text: "Metallic bonding allows electrons to move freely like a \"sea\".", answer: true },
+            { type: 'tf', text: "Conchoidal fracture is characteristic of Quartz.", answer: true },
+            { type: 'tf', text: "Pyrite is a carbonate mineral.", answer: false, explanation: "Pyrite is a Sulfide (FeS2)." },
+            { type: 'tf', text: "Dolomite fizzes with HCl only when it is powdered.", answer: true },
+            { type: 'tf', text: "Piezoelectricity is a property found in Quartz.", answer: true }
+        ];
+        quiz = new GeologyQuiz('quizContainer', questions);
+    </script>
+
+    <footer>
+        <p>🌍 Geology Master</p>
+    </footer>
+
+</body>
+
+</html>

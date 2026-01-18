@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Chapter 7 | Geology Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">⚡ Geology Master</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../lectures/lec7.html" class="nav-item">📖 Review Ch.7</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header class="lecture-header">
+            <div class="badge badge-red">Quiz</div>
+            <h1>🎯 Chapter 7: Earthquakes</h1>
+            <p style="color: var(--text-muted);">15 Questions • MCQ + True/False</p>
+        </header>
+
+        <div id="quizContainer" class="quiz-container"></div>
+
+    </div>
+
+    <script src="../js/quiz.js"></script>
+    <script>
+        const questions = [
+            { type: 'mcq', text: "The point on the Earth's surface directly above the focus is called:", options: ["Hypocenter", "Epicenter", "Fault scarp", "Shadow zone"], answer: 'b' },
+            { type: 'mcq', text: "Which seismic waves are the fastest and arrive first at the recording station?", options: ["S-waves", "Surface waves", "P-waves", "Love waves"], answer: 'c' },
+            { type: 'mcq', text: "S-waves can travel through:", options: ["Solids only", "Liquids only", "Solids and liquids", "Solids, liquids, and gases"], answer: 'a' },
+            { type: 'mcq', text: "The Richter scale measures the earthquake's ............", options: ["Intensity", "Damage", "Magnitude", "Duration"], answer: 'c' },
+            { type: 'mcq', text: "Which scale is based on the amount of damage to structures?", options: ["Richter scale", "Modified Mercalli scale", "Moment magnitude scale", "Mohs scale"], answer: 'b' },
+            { type: 'mcq', text: "The S-wave shadow zone exists because:", options: ["S-waves are too slow", "The mantle is solid", "The outer core is liquid", "The inner core is solid"], answer: 'c' },
+            { type: 'mcq', text: "On the Richter scale, an increase of one unit represents a ............ increase in wave amplitude.", options: ["2 times", "10 times", "32 times", "100 times"], answer: 'b' },
+            { type: 'mcq', text: "Which type of surface wave produces a side-to-side vibration?", options: ["P-wave", "Rayleigh wave", "Love wave", "S-wave"], answer: 'c' },
+            { type: 'tf', text: "The focus is the location on the surface where the earthquake starts.", answer: false, explanation: "Focus is BELOW the surface; Epicenter is on the surface." },
+            { type: 'tf', text: "P-waves are compressional waves similar to sound waves.", answer: true },
+            { type: 'tf', text: "Surface waves are generally the most destructive type of seismic waves.", answer: true },
+            { type: 'tf', text: "The outer core of the Earth is solid, while the inner core is liquid.", answer: false, explanation: "Outer core is Liquid, Inner core is Solid." },
+            { type: 'tf', text: "A seismograph is the instrument used to record earthquake waves.", answer: true },
+            { type: 'tf', text: "Each number on the Richter scale represents an energy release about 32 times greater than the previous number.", answer: true },
+            { type: 'tf', text: "Most earthquakes occur along active plate tectonic boundaries.", answer: true }
+        ];
+        quiz = new GeologyQuiz('quizContainer', questions);
+    </script>
+
+    <footer>
+        <p>🌍 Geology Master</p>
+    </footer>
+
+</body>
+
+</html>
