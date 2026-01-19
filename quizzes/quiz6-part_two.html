@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Chapter 6 Part 2 | Geology Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">⚡ Geology Master</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-item">Home</a>
+                <a href="../lectures/lec6-part_two.html" class="nav-item">📖 Review Ch.6 P2</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header class="lecture-header">
+            <div class="badge badge-blue">Quiz</div>
+            <h1>🎯 Chapter 6 Part 2: Sedimentary & Metamorphic</h1>
+            <p style="color: var(--text-muted);">14 Questions • MCQ + True/False</p>
+        </header>
+
+        <div id="quizContainer" class="quiz-container"></div>
+
+    </div>
+
+    <script src="../js/quiz.js"></script>
+    <script>
+        const questions = [
+            // MCQ Questions
+            { type: 'mcq', text: "A clastic sedimentary rock composed of rounded gravel-sized particles is called:", options: ["Breccia", "Conglomerate", "Sandstone", "Shale"], answer: 'b' },
+            { type: 'mcq', text: "Which of the following is a chemical sedimentary rock formed by evaporation?", options: ["Coal", "Limestone (Biochemical)", "Rock Gypsum", "Sandstone"], answer: 'c' },
+            { type: 'mcq', text: "The metamorphic equivalent of Limestone is:", options: ["Quartzite", "Marble", "Slate", "Gneiss"], answer: 'b' },
+            { type: 'mcq', text: "Metamorphism that occurs due to high heat from a nearby magma body is called:", options: ["Regional metamorphism", "Contact metamorphism", "Dynamic metamorphism", "Burial metamorphism"], answer: 'b' },
+            { type: 'mcq', text: "Which of the following rocks represents the highest grade of metamorphism?", options: ["Slate", "Phyllite", "Schist", "Gneiss"], answer: 'd' },
+            { type: 'mcq', text: "Coal is classified as a(n) ............ sedimentary rock.", options: ["Clastic", "Chemical", "Organic", "Intrusive"], answer: 'c' },
+            { type: 'mcq', text: "A non-foliated metamorphic rock formed from sandstone is:", options: ["Marble", "Quartzite", "Slate", "Schist"], answer: 'b' },
+            { type: 'mcq', text: "The process of turning loose sediments into solid rock through compaction and cementation is called:", options: ["Weathering", "Erosion", "Lithification", "Metamorphism"], answer: 'c' },
+            // True/False Questions
+            { type: 'tf', text: "Breccia is composed of angular gravel-sized particles.", answer: true },
+            { type: 'tf', text: "Shale has very high porosity and permeability.", answer: false, explanation: "Shale has LOW porosity/permeability and acts as a barrier for oil." },
+            { type: 'tf', text: "Regional metamorphism is associated with mountain building and high pressure.", answer: true },
+            { type: 'tf', text: "Foliation is a texture characteristic of contact metamorphism.", answer: false, explanation: "Foliation comes from Pressure/Regional metamorphism. Contact metamorphism produces Non-foliated rocks." },
+            { type: 'tf', text: "Coquina is a type of limestone made entirely of shell fragments.", answer: true },
+            { type: 'tf', text: "Slate is a low-grade metamorphic rock formed from Shale.", answer: true }
+        ];
+        quiz = new GeologyQuiz('quizContainer', questions);
+    </script>
+
+    <footer>
+        <p>🌍 Geology Master</p>
+    </footer>
+
+</body>
+
+</html>
